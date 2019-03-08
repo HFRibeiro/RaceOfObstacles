@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face { font-family: Cabin; src:url('../fonts/Cabin-Regular.otf'); } 
+@font-face { font-family: Herr Von Muellerhoff; src:url('../fonts/HerrVonMuellerhoff-Regular.ttf'); } 
+@font-face { font-family: Source Sans Pro; src:url('../fonts/SourceSansPro-Black.otf'); } 
+@font-face { font-family: Pixel; src:url('../fonts/Pixel.ttf'); } 
+
+body {
+	position:absolute;
+	left:0;
+	top:0;
+	margin:0;
+	padding:0;
+    /*background-color: rgba(25,25,25,1.00);*/
+	height:auto;
+	background: url(../imagens/fundo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+	
+}
+:-webkit-full-screen {
+    background: url(../imagens/fundo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    z-index: 20;
+}
+user agent stylesheet:-webkit-full-screen {
+    background: url(../imagens/fundo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    z-index: 2147483647;
+}
+
+#MainPic { 
+  width:100%;
+  height:auto;
+  float:left;
+  
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#maxima
+{
+	position:absolute;
+	float:right;
+	width:2vw;
+	height:2vw;
+	margin-left:96vw;
+	font-family:Cabin;
+	font-size:1vw;
+	color:rgba(255,255,255,1.00);
+	z-index:50;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:80%;
+	background-image:url(../imagens/maxima.png);
+	opacity:0.7;
+}
+#maxima:hover
+{
+	opacity:1;
+	cursor:pointer;
+}
+#maxima:active
+{
+	-webkit-filter: invert(100%);
+	cursor:pointer;
+}
+#lbTop
+{
+	position:absolute;
+	left:20%;
+	width:60%;
+	text-align:center;
+	height:auto;
+	font-size:1.2vw;
+	color:rgba(255,255,255,1.00);
+	font-family:Cabin;
+	float:left;
+}
+#TeamsControlDiv
+{
+	width:60%;
+	margin-left:20%;
+	height:27vw;
+	margin-top:3vw;
+	text-align:center;
+	font-size:1vw;
+	color:rgba(255,255,255,1.00);
+	font-family:Cabin;
+	line-height:2.2vw;
+	position:absolute;
+	float:left;
+	
+	background-image: url(../imagens/ruminho.png), url(../imagens/ruminho.png);
+	background-position: right top, left top;
+	background-repeat: no-repeat;
+	background-size:20%;
+	
+}
+#TeamsDiv
+{
+	width:60%;
+	margin-left:20%;
+	float:left;
+	margin-top:29vw;
+	margin-bottom:2vw;
+}
+/* ---- table-like ---- */
+
+.table-like {
+  list-style: none;
+   
+}
+
+/* clear fix */
+.table-like:after {
+  content: '';
+  display: block;
+  clear: both;
+  
+}
+
+/* ---- vertical table-like ---- */
+
+.table-like__item {
+  width:100%;
+  height:2vw;
+  clear: both;
+  border: 1px solid;
+  line-height:2vw;
+  border-radius:0.7vw;
+  margin-top:0.2vw;
+  margin-bottom:0.2vw;
+  background-color:rgba(0,132,255,1.00);
+  font-family:Cabin;
+  font-size:1.4vw;
+}
+.table-like__item:hover {
+	cursor:pointer;
+}
+
+.table-like__item > * {
+  display: inline-block;
+}
+
+.table-like__item .name {
+	 width: 35%;
+	 text-align:center;
+ }
+ 
+.table-like__item .number {
+	margin-left:5%;
+	 width: 10%;
+	 text-align:center;
+ }
+ .table-like__item .date {
+	 width: 35%;
+	 text-align:center;
+	 
+ }
+ .table-like__item .vlt {
+	 width: 10%;
+	 text-align:center;
+	 
+ }
+ 
+#Race16Config{
+	width:100%;
+	height:50%;
+	float:left;
+	background-color:rgba(95,95,95,0.49);
+	border:2px solid black;
+	overflow-y:auto;
+}
+ 
+#FinalsConfig{
+	width:100%;
+	height:50%;
+	float:left;
+	background-color:rgba(95,95,95,0.49);
+	border:2px solid black;
+	overflow-y:auto;
+	display:none;
+}
+#topB16{
+	width:100%; float:left;
+}
+.colorForm{
+	width:5vw;
+	height:2vw;
+	font-size:1vw;
+	font-family:Cabin;
+}
+.numberinputs{
+	width:3vw;
+	height:2vw;
+}
+#TeamEditOptions{
+	width:100%;
+	height:15%;
+	background-color:rgba(95,95,95,0.49);
+	border:2px solid black;
+	float:left;
+}
+.bts
+{
+	padding-left:2%;
+	padding-right:2%;
+	width:16%;
+	margin-left:10%;
+	height:100%;
+	border-radius:1.3vw;
+	background-color:rgba(119,119,119,0.88);
+	float:left;
+	color:rgba(255,255,255,1.00);
+	font-family:Cabin;
+	font-size:1.4vw;
+	text-align:left;
+	line-height:4vw;
+	background-position:right;
+	background-repeat:no-repeat;
+	background-size:30%;
+}
+.bts:hover{
+	cursor:pointer;
+	opacity:0.6;
+}
+#TeamEdit{
+	width:80%;
+	margin-left:10%;
+	height:20%;
+	margin-top:10%;
+	position:fixed;
+	background-color:rgba(43,43,43,1.00);
+	border:3px solid white;
+	color:rgba(255,255,255,1.00);
+	font-family:Cabin;
+	font-size:1.4vw;
+	display:none;
+}
+.inputsEdit{
+	width:4vw;
+}

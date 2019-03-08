@@ -1,0 +1,602 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face { font-family: Broadband; src:url('../fonts/Broadband ICG.ttf'); }
+@font-face { font-family: Cabin; src:url('../fonts/Cabin-Regular.otf'); }
+@font-face { font-family: Herr Von Muellerhoff; src:url('../fonts/HerrVonMuellerhoff-Regular.ttf'); }
+@font-face { font-family: Source Sans Pro; src:url('../fonts/SourceSansPro-Black.otf'); }
+@font-face { font-family: Pixel; src:url('../fonts/Pixel.ttf'); }
+@font-face { font-family: Monaco; src:url('../fonts/Monaco.ttf'); }
+
+body {
+	position:absolute;
+	left:0;
+	top:0;
+	margin:0;
+	padding:0;
+    /*background-color: rgba(25,25,25,1.00);*/
+	height:auto;
+	background: url(../imagens/fundo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+:-webkit-full-screen {
+    background: url(../imagens/fundo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    z-index: 20;
+}
+user agent stylesheet:-webkit-full-screen {
+    background: url(../imagens/fundo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    z-index: 2147483647;
+}
+
+#MainPic {
+  position:fixed;
+  width:100%;
+  height:100%;
+  float:left;
+  overflow: scroll;
+
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#maxima
+{
+	position:absolute;
+	float:right;
+	top:1vw;
+	width:2vw;
+	height:2vw;
+	margin-left:96vw;
+	font-family:Cabin;
+	font-size:1vw;
+	color:rgba(255,255,255,1.00);
+	z-index:50;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:80%;
+	background-image:url(../imagens/maxima.png);
+	opacity:0.7;
+}
+#maxima:hover
+{
+	opacity:1;
+	cursor:pointer;
+}
+#maxima:active
+{
+	-webkit-filter: invert(100%);
+	cursor:pointer;
+}
+#TeamsDiv
+{
+	width:40%;
+	float:left;
+  	margin-left:0.2vw;
+}
+/* ---- table-like ---- */
+
+.table-like {
+  list-style: none;
+
+}
+
+/* clear fix */
+.table-like:after {
+  content: '';
+  display: block;
+  clear: both;
+
+}
+
+/* ---- vertical table-like ---- */
+
+.table-like__item {
+  width:100%;
+  height:3vw;
+  clear: both;
+  border: 1px solid;
+  line-height:3vw;
+  border-radius:1vw;
+  margin-top:0.2vw;
+  margin-bottom:0.2vw;
+  font-family:Cabin;
+  font-size:1.6vw;
+}
+.table-like__item:hover {
+	cursor:pointer;
+	opacity:0.8;
+}
+
+.table-like__item > * {
+  display: inline-block;
+}
+
+.table-like__item .name {
+	 width: auto;
+	 margin-left:5%;
+	 text-align:center;
+ }
+
+.table-like__item .number {
+	margin-left:5%;
+	 width: 10%;
+	 text-align:center;
+ }
+ .table-like__item .date {
+	 position:absolute;
+	 right:5%;
+	 text-align:center;
+ }
+ #bt_accept_blue
+ {
+	 line-height: 20px;
+	 margin-left: 15px;
+ }
+ #selc
+ {
+ 	margin-left:1%;
+ 	width:50%;
+ 	font-family:Cabin;
+ 	padding-left:5%;
+ }
+ #ordenacao
+ {
+ 	width:40%;
+ 	margin-left:7%;
+ 	height:30%;
+ 	margin-top:3%;
+ 	font-family:Cabin;
+ 	color:rgba(255,255,255,1.00);
+ 	float: left;
+ }
+ .bt_accept
+ {
+ 	width:60%;
+ 	margin-left: 0%;
+ 	height:50%;
+ 	font-family:Cabin;
+ 	color:rgba(255,255,255,1.00);
+ 	background-color: rgb(6, 106, 255);
+   border-radius: 0.5vw;
+   border-bottom: 5px solid rgba(0,55,137,1.00);
+ 	margin-top: 10px;
+ }
+ #bt_accept_red
+ {
+ 	background-color: rgba(255,0,0,1.00);
+ 	border-bottom: 5px solid rgba(150,0,0,1.00);
+ 	color: rgba(255,255,255,1.00);
+ }
+ #brcode
+ {
+ 	width:20%;
+ 	margin-left:12%;
+ 	height:30%;
+ 	font-family:Cabin;
+ 	color:rgba(255,255,255,1.00);
+ }
+ #barcodeBlue
+ {
+ 	margin-left:1%;
+ 	width:30%;
+ 	font-family:Cabin;
+ 	text-align: center;
+ }
+ #brcode2
+ {
+ 	width:20%;
+ 	margin-left:20%;
+ 	height:30%;
+ 	font-family:Cabin;
+ 	color:rgba(255,255,255,1.00);
+ }
+ #barcodeRed
+ {
+ 	margin-left:1%;
+ 	width:30%;
+ 	font-family:Cabin;
+ 	text-align: center;
+ }
+
+#bottomPub
+{
+	width:100vw;
+	bottom:0;
+	position:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:60%;
+	background-image:url(../imagens/SAR.png);
+  background-color:rgba(0,0,0,1.00);
+}
+#topPub
+{
+	width:100vw;
+	top:0;
+	position:fixed;
+	background: url(../imagens/fundo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#scrollHide
+{
+	position:fixed;
+	width:2vw;
+	height:100%;
+	right:0;
+	background: url(../imagens/fundo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#RigthSquareDiv
+{
+	position:fixed;
+	margin-left:42%;
+	width:53.5%;
+	z-index:50;
+}
+
+#team1ID
+{
+	width:100%;
+	height:auto;
+	color:#999;
+	font-size:2vw;
+	font-family:Cabin;
+	text-align:center;
+	background-position:right;
+	background-size:20%;
+	background-repeat:no-repeat;
+	margin-top:6%;
+}
+#team1
+{
+	width:100%;
+	height:20%;
+	color:rgb(6, 106, 255);
+	font-size:5vw;
+	font-family:Cabin;
+	text-align:center;
+	background-position:right;
+	background-size:20%;
+	/*background-image:url(../imagens/finish.png);*/
+	background-repeat:no-repeat;
+	margin-top:1%;
+}
+#team1:hover
+{
+	cursor:pointer;
+}
+#team2
+{
+	width:100%;
+	height:20%;
+	text-align:center;
+	color: rgb(255, 0, 0);
+	font-size:2vw;
+	font-family:Cabin;
+	background-position:right;
+	background-size:20%;
+	/*background-image:url(../imagens/finish.png);*/
+	background-repeat:no-repeat;
+}
+#team2:hover
+{
+	cursor:pointer;
+}
+
+#Timeteam1
+{
+	width:100%;
+	height:20%;
+	text-align:center;
+	color:rgb(6, 106, 255);
+	font-size:7vw;
+	font-family:Monaco;
+}
+#Timeteam2
+{
+	width:100%;
+	height:20%;
+	text-align:center;
+	color:rgb(255, 0, 0);
+
+	font-size:7vw;
+	font-family:Monaco;
+}
+#buttons
+{
+	width:100%;
+	height:10%;
+}
+.btsM
+{
+	width:48%;
+	margin-left:1%;
+	margin-right:1%;
+	height:100%;
+	text-align:center;
+	float:left;
+	font-family:Cabin;
+	border-bottom: 5px solid #787878;
+	border-radius:1vw;
+	font-size:1.4vw;
+	background-color:#e1e1e1;
+}
+.btsM:hover
+{
+	cursor:pointer;
+	color:rgba(255,255,255,1.00);
+}
+.btsM:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+#Disqlteam1
+{
+	width:60%;
+	margin-left:20%;
+	height:5%;
+	background-color:rgb(6, 106, 255);
+	border-radius:0.5vw;
+	border-bottom: 5px solid rgba(0,55,137,1.00);
+	color:rgba(255,255,255,1.00);
+}
+#Disqlteam1:hover
+{
+	cursor:pointer;
+}
+#Disqlteam1:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+#Disqlteam2
+{
+	width:60%;
+	margin-left:20%;
+	height:5%;
+	background-color:rgba(255,0,0,1.00);
+
+	border-radius:0.5vw;
+	border-bottom: 5px solid rgba(150,0,0,1.00);
+	color:rgba(255,255,255,1.00);
+}
+#Disqlteam2:hover
+{
+	cursor:pointer;
+}
+#Disqlteam2:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+.bts
+{
+	width:25%;
+	height:50%;
+	text-align:center;
+	font-family:Cabin;
+}
+.bts:hover
+{
+	opacity:0.7;
+	cursor:pointer;
+	color:rgba(255,255,255,1.00);
+	font-family:Cabin;
+}
+#endTime1
+{
+	width:50%;
+	display:none;
+}
+#Disqualify1
+{
+	width:100%;
+}
+#Disqualify2
+{
+	width:100%;
+}
+#endTime2
+{
+	width:50%;
+	display:none;
+}
+#debugTextArea
+{
+	width:100%;
+	height:100%;
+	display:none;
+}
+#GetReady
+{
+	width:60vw;
+	margin-left:20vw;
+	position:fixed;
+	height:40vw;
+	margin-top:4%;
+	background-color:rgba(184,184,184,1.00);
+	z-index:50;
+	font-size:40vw;
+	text-align:center;
+	line-height:40vw;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	display:none;
+	background: url(../imagens/race.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+ color:rgba(255,0,0,1.00);
+  -webkit-text-stroke: 1vw black;
+
+
+}
+#configs
+{
+	position:fixed;
+	width:4vw;
+	height:4vw;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:80%;
+	background-image:url(../imagens/configs.png);
+}
+#configs:hover
+{
+	opacity:0.8;
+	cursor:pointer;
+}
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:11px;
+	font-family:Cabin;
+}
+#finals{
+ 	position:fixed;
+	right:5vw;
+	width:6vw;
+	height:6vw;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:80%;
+	background-image:url(../imagens/finals.png);
+}
+#finals:hover
+{
+	opacity:0.8;
+	cursor:pointer;
+}
+#raceOfChamps
+{
+	width:auto;
+	margin-left:30vw;
+	position:fixed;
+	height:5vw;
+	color:rgba(255,255,255,1.00);
+	font-family:Broadband;
+	font-size:2vw;
+	text-align:center;
+
+	background-image: url(../imagens/ruminho.png), url(../imagens/ruminho.png);
+	background-position: right top, left top;
+	background-repeat: no-repeat;
+	background-size:8%;
+}
+#penalidadesDiv
+{
+	width:80vw;
+	margin-left:10vw;
+	height:30vw;
+	margin-top:10vw;
+	position:fixed;
+	background-color:rgba(10,10,10,1.00);
+	z-index:500;
+	float:left;
+	display:none;
+
+}
+#lablePen
+{
+	font-family:Cabin;
+	font-size:2.4vw;
+	height:100%;
+	margin-top:13vw;
+	float:left;
+	margin-left:10vw;
+	color:rgba(255,255,255,1.00);
+}
+#penalitysInput
+{
+	font-family:Cabin;
+	font-size:2.4vw;
+	margin-top:13vw;
+	float:left;
+	width:5vw;
+	margin-left:3vw;
+}
+#savePen
+{
+	float:left;
+	margin-top:13vw;
+	border-radius:1vw;
+	width:8vw;
+	height:3vw;
+	background-color:rgba(1,139,211,1.00);
+	margin-left:3vw;
+	font-family:Cabin;
+	font-size:2.4vw;
+	text-align:center;
+}
+#savePen:hover
+{
+	opacity:0.6;
+	cursor:pointer;
+}
+#connection
+{
+	position:fixed;
+	bottom:0;
+	width:4vw;
+	height:4vw;
+	z-index:5;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:80%;
+	background-image:url(../imagens/notconnected.png);
+}
+#connection:hover
+{
+	cursor:alias;
+	opacity:0.8;
+}
+#ruminho
+{
+	position:fixed;
+	bottom:0;
+	right:0;
+	width:6vw;
+	height:6vw;
+	z-index:5;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:90%;
+	background-image:url(../imagens/ruminho.png);
+}
